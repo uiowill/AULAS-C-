@@ -13,6 +13,6 @@
 
 // Console.WriteLine("A altura é " + d + " O perimetro é " + e);
 
-Pessoa a1 = new Pessoa("Pedro", 1965, 1.45);
+// Pessoa a1 = new Pessoa("Pedro", 1965, 1.45);
 
-var nome = a1.mostrarIdade();
+// var nome = a1.mostrarIdade();

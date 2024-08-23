@@ -47,3 +47,25 @@ class Pessoa{
     return nome + altura;
     }
 }
+class Quadrado{
+    private double tamanho;
+    
+    public Quadrado(double tamanho){
+    this.tamanho = tamanho;
+    }
+    public double calcularArea(){
+        return tamanho * 2;
+    }
+    public double Redimensionar(){
+       return tamanho = 20;
+    }
+    public void imprimirDados(){
+        double area = calcularArea();
+        double redimensionar = Redimensionar();
+        Console.Write($"Tamanho: {tamanho} Area: {area}");
+    }
+    public void Reimpressao(){
+        Console.WriteLine($"Você quer redimensionar?");
+        
+    }
+}
