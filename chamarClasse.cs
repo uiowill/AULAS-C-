@@ -16,3 +16,16 @@
 // Pessoa a1 = new Pessoa("Pedro", 1965, 1.45);
 
 // var nome = a1.mostrarIdade();
+
+// -----------------------------REDIMENSIONAR--------------------------
+// Quadrado q1 = new Quadrado(4);
+// Console.WriteLine(q1.calcularArea());
+
+// q1.Redimensionar(10);
+// Console.WriteLine(q1.calcularArea());
+// -------------------------------CONTA DE BANCO------------------
+Banco x1 = new Banco(12345678, 15);
+x1.saque(15);
+Console.WriteLine($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
+x1.deposito(20);
+Console.Write($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
