@@ -24,8 +24,11 @@
 // q1.Redimensionar(10);
 // Console.WriteLine(q1.calcularArea());
 // -------------------------------CONTA DE BANCO------------------
-Banco x1 = new Banco(12345678, 15);
-x1.saque(15);
-Console.WriteLine($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
-x1.deposito(20);
-Console.Write($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
+// Banco x1 = new Banco(12345678, 15);
+// x1.saque(15);
+// Console.WriteLine($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
+// x1.deposito(20);
+// Console.Write($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
+// -------------------------------MEDIA ALUNO------------------
+Aluno a1= new Aluno(1, "A,", 9, 9, 9);
+Console.WriteLine(a1.CalculoNotaProvaFinal());
