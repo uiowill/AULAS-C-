@@ -67,3 +67,34 @@
 //     }
 // }
 // --------------------- BANCO -------------------
+
+
+// -----------------------PROTECTED-----------------
+// class Mae{
+//     public bool atributoMaeBool = false;
+// }
+// class Pai:Mae{
+//     public string atributoPaiString = "";
+//     protected int atributoPaiInt = 0;
+//     private char atributoPaiCar = ' ';
+// }
+
+// class Filho: Pai{
+//     void Teste() {
+//         atributoPaiString = " ";
+//         atributoPaiInt = 0;
+//         atributoMaeBool = true;
+//     }
+// }
+
+
+using System.Reflection.Metadata.Ecma335;
+
+class Pessoa{
+    public string atributoNome = "oi";
+    public int atributoCPF = 5;
+}
+class Funcionario : Pessoa{
+    public double atributoSalario = 4.0;
+    public string atributoCargo = "blz";
+}

@@ -30,5 +30,9 @@
 // x1.deposito(20);
 // Console.Write($"Conta: {x1.Getsaldo()} - Saldo: {x1.GetnumeroConta()}");
 // -------------------------------MEDIA ALUNO------------------
-Aluno a1= new Aluno(1, "A,", 9, 9, 9);
-Console.WriteLine(a1.CalculoNotaProvaFinal());
+// Aluno a1= new Aluno(1, "A,", 9, 9, 9);
+// Console.WriteLine(a1.CalculoNotaProvaFinal());
+// -----------------------------PROTECTED-----------------
+
+Funcionario p = new Funcionario();
+Console.WriteLine(p.atributoCargo + p.atributoCPF + p.atributoNome + p.atributoSalario);
