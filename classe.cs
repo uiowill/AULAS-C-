@@ -111,4 +111,44 @@
 //         Console.WriteLine($"{atributoNome} de cpf: {atributoCPF}, salario {atributoSalario} com cargo {atributoCargo}");
 //     }
 // }
+// -------------------------------ALTAS FITAS-------------------
+using System.Runtime.InteropServices;
+using Microsoft.VisualBasic;
 
+class Produto{
+    protected string id = "";
+    protected string nome = "";
+
+protected int resultado = Func(0,10);
+
+    private static int Func(int v1, int v2)
+    {
+       Console.Write(oi);
+    }
+
+    public Produto(string id, string nome){
+        this.id=id;
+        this.nome = nome;
+    }
+}
+class Industrializados : Produto{
+    protected int codBarras = 0;
+    protected string Marca = " ";
+
+    public Industrializados(string id, string nome, int codBarras, string Marca) : base(id, nome)
+    {
+        this.codBarras = codBarras;
+        this.Marca = Marca;
+    }
+
+}
+
+
+class Naturais : Produto{
+    protected double peso = 0.0;
+
+    public Naturais(string id, string nome, double peso) : base(id, nome)
+    {
+        this.peso = peso;
+    }
+}
