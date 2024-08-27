@@ -87,14 +87,28 @@
 //     }
 // }
 
+// -----------------HERDAR E PUXAR COMO PRIVATE----------------------
 
-using System.Reflection.Metadata.Ecma335;
+// using System.Reflection.Metadata.Ecma335;
 
-class Pessoa{
-    public string atributoNome = "oi";
-    public int atributoCPF = 5;
-}
-class Funcionario : Pessoa{
-    public double atributoSalario = 4.0;
-    public string atributoCargo = "blz";
-}
+// class Pessoa{
+//     protected string atributoNome = "oi";
+//     protected int atributoCPF = 5;
+//     public Pessoa(string atributoNome, int atributoCPF){ // PARA QUE MUDE UMA COISA SÓ É NECESSARIO MUDAR A PESSOA PARA AS COISAS QUE ELES HERDAM MUDAR TB
+//         this.atributoCPF = atributoCPF;
+//         this.atributoNome = atributoNome;
+//     }
+// }
+// class Funcionario : Pessoa{
+//     protected double atributoSalario = 4.0;
+//     protected string atributoCargo = "blz";
+
+//     public Funcionario(double atributoSalario, string atributoCargo, string atributoNome, int atributoCPF) : base(atributoNome, atributoCPF){
+//         this.atributoSalario = atributoSalario;
+//         this.atributoCargo = atributoCargo;
+//     }
+//     public void ImprimirDetalhes(){
+//         Console.WriteLine($"{atributoNome} de cpf: {atributoCPF}, salario {atributoSalario} com cargo {atributoCargo}");
+//     }
+// }
+

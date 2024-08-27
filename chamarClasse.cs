@@ -32,7 +32,7 @@
 // -------------------------------MEDIA ALUNO------------------
 // Aluno a1= new Aluno(1, "A,", 9, 9, 9);
 // Console.WriteLine(a1.CalculoNotaProvaFinal());
-// -----------------------------PROTECTED-----------------
+// -----------------------------PROTECTED E HERDAR-----------------
 
-Funcionario p = new Funcionario();
-Console.WriteLine(p.atributoCargo + p.atributoCPF + p.atributoNome + p.atributoSalario);
+// Funcionario p = new Funcionario(2, "pedreiro", "Oid", 094);
+// p.ImprimirDetalhes();
