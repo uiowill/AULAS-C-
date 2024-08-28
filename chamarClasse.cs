@@ -36,3 +36,21 @@
 
 // Funcionario p = new Funcionario(2, "pedreiro", "Oid", 094);
 // p.ImprimirDetalhes();
+
+// -----------------------PRODUTOS----------------
+// var a1 = new Animal(true, "");
+// // a1.ToString();
+// var c1 = new Cachorro(false, "au");
+// // c1.ToString();
+// var g1 = new Gato(true, "miau");
+// // g1.ToString();
+// var p1 = new Passaro(false, "piu");
+// p1.ToString();
+// ----------------- CALCULADORA-----------------
+Calculadora c = new Calculadora();
+Console.WriteLine(c.GetResultado());
+c.Soma(5);
+Console.WriteLine(c.GetResultado());
+c.Soma(30);
+Console.WriteLine(c.GetResultado());
+c.Subtrair(20);

@@ -48,7 +48,7 @@
 //     }
 // }
 
-// --------------------- QUADRADO ---------------------------
+// ----------------- QUADRADO --------------------
 // class Quadrado{
 //     private double tamanho;
 
@@ -87,7 +87,7 @@
 //     }
 // }
 
-// -----------------HERDAR E PUXAR COMO PRIVATE----------------------
+// ---------HERDAR E PUXAR COMO PRIVATE--------------------
 
 // using System.Reflection.Metadata.Ecma335;
 
@@ -99,6 +99,7 @@
 //         this.atributoNome = atributoNome;
 //     }
 // }
+
 // class Funcionario : Pessoa{
 //     protected double atributoSalario = 4.0;
 //     protected string atributoCargo = "blz";
@@ -111,44 +112,100 @@
 //         Console.WriteLine($"{atributoNome} de cpf: {atributoCPF}, salario {atributoSalario} com cargo {atributoCargo}");
 //     }
 // }
-// -------------------------------ALTAS FITAS-------------------
-using System.Runtime.InteropServices;
-using Microsoft.VisualBasic;
+// -------------------TO STRING-------------------
+// using System.Runtime.InteropServices;
+// using Microsoft.VisualBasic;
 
-class Produto{
-    protected string id = "";
-    protected string nome = "";
+// class Produto{
+//     protected string id = "";
+//     protected string nome = "";
 
-protected int resultado = Func(0,10);
+//     public Produto(string id, string nome){
+//         this.id=id;
+//         this.nome = nome;
+//     }
+//         public virtual string ToString(){
+//        return $"ID É : {id} / NOME:  {nome},";
+//     }
+// }
+// class Industrializados : Produto{
+//     protected int codBarras = 0;
+//     protected string Marca = " ";
 
-    private static int Func(int v1, int v2)
-    {
-       Console.Write(oi);
+//     public Industrializados(string id, string nome, int codBarras, string Marca) : base(id, nome)
+//     {
+//         this.codBarras = codBarras;
+//         this.Marca = Marca;
+//     }
+
+// }
+
+// class Naturais : Produto{
+//     protected double peso = 0.0;
+
+//     public Naturais(string id, string nome, double peso) : base(id, nome)
+//     {
+//         this.peso = peso;
+//     }
+//         public override string ToString(){
+//         return $"ID É : {id} / NOME:  {nome}, peso é {peso}";
+//     }
+// }
+
+// class Animal{
+//     protected Boolean Comer = true;
+//     protected string fazerBarulho = " ";
+
+//     public Animal(Boolean Comer, string fazerBarulho){
+//         this.Comer = Comer;
+//         this.fazerBarulho = fazerBarulho;
+//     }
+//     public virtual string ToString(){
+//         return $"Comeu? {Comer} / fazBarulho?{fazerBarulho}";
+//     }
+// }
+
+// class Cachorro : Animal{
+//     public Cachorro(Boolean Comer, string fazerBarulho) : base(Comer, fazerBarulho){
+//         this.Comer = false;
+//         this.fazerBarulho = "auau";
+//     }
+//      public override string ToString(){
+//         return $"Comeu? {Comer} / fazBarulho? {fazerBarulho}";
+//     }
+// }
+
+// class Gato : Animal{
+//     public Gato(Boolean Comer, string fazerBarulho) : base(Comer, fazerBarulho){
+//         this.Comer = true;
+//         this.fazerBarulho = "miu";
+//     }
+//         public override string ToString(){
+//         return $"Comeu? {Comer} / fazBarulho?{fazerBarulho}";
+//     }
+// }
+
+// class Passaro : Animal{
+//     public Passaro(Boolean Comer, string fazerBarulho) : base(Comer, fazerBarulho){
+//         this.Comer = false;
+//         this.fazerBarulho = "miu";
+//     }
+//         public override string ToString(){
+//         return $"Comeu? {Comer} / fazBarulho?{fazerBarulho}";
+//     }
+// }
+
+// --------------------- SOMA--------------------
+class Calculadora{
+    private int resultado;
+    public int GetResultado(){
+        return resultado;
+    }
+    public void Soma(int numero){
+      resultado += numero;
+    }
+    public void Subtrair(int numero){
+    resultado -= numero;
     }
 
-    public Produto(string id, string nome){
-        this.id=id;
-        this.nome = nome;
-    }
-}
-class Industrializados : Produto{
-    protected int codBarras = 0;
-    protected string Marca = " ";
-
-    public Industrializados(string id, string nome, int codBarras, string Marca) : base(id, nome)
-    {
-        this.codBarras = codBarras;
-        this.Marca = Marca;
-    }
-
-}
-
-
-class Naturais : Produto{
-    protected double peso = 0.0;
-
-    public Naturais(string id, string nome, double peso) : base(id, nome)
-    {
-        this.peso = peso;
-    }
 }
