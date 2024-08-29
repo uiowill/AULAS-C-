@@ -47,10 +47,27 @@
 // var p1 = new Passaro(false, "piu");
 // p1.ToString();
 // ----------------- CALCULADORA-----------------
-Calculadora c = new Calculadora();
-Console.WriteLine(c.GetResultado());
-c.Soma(5);
-Console.WriteLine(c.GetResultado());
-c.Soma(30);
-Console.WriteLine(c.GetResultado());
-c.Subtrair(20);
+// Calculadora c = new Calculadora();
+// Console.WriteLine(c.GetResultado());
+// c.Soma(5);
+// Console.WriteLine(c.GetResultado());
+// c.Soma(30);
+// Console.WriteLine(c.GetResultado());
+// c.Subtrair(20);
+// -------------------- VETOR-------------
+// using System.Security.Cryptography;
+
+// Banco b1 = new Banco(1);
+// // Banco b2 = new Banco(2);
+// b1.Depositar(40);
+// b1.sacar(25);
+// b1.sacar(4);
+// b1.ImprimirHistorico();
+// Console.WriteLine($"Saldo: R${b1.Getsaldo()}");
+
+// --------------- TESTAR PRA VER SE É IGUAL
+
+Produtos p1 = new Produtos("oi", 43);
+Produtos x1 = new Produtos("ofdsafds", 43);
+
+Console.WriteLine(p1.Equals(x1));

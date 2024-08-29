@@ -66,8 +66,6 @@
 //         Console.Write($"Tamanho: {tamanho} Area: {area}");
 //     }
 // }
-// --------------------- BANCO -------------------
-
 
 // -----------------------PROTECTED-----------------
 // class Mae{
@@ -196,16 +194,16 @@
 // }
 
 // --------------------- SOMA--------------------
-class Calculadora{
-    private int resultado;
-    public int GetResultado(){
-        return resultado;
-    }
-    public void Soma(int numero){
-      resultado += numero;
-    }
-    public void Subtrair(int numero){
-    resultado -= numero;
-    }
+// class Calculadora{
+//     private int resultado;
+//     public int GetResultado(){
+//         return resultado;
+//     }
+//     public void Soma(int numero){
+//       resultado += numero;
+//     }
+//     public void Subtrair(int numero){
+//     resultado -= numero;
+//     }
 
-}
+// }
