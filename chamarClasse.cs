@@ -67,7 +67,21 @@
 
 // --------------- TESTAR PRA VER SE É IGUAL
 
-Produtos p1 = new Produtos("oi", 43);
-Produtos x1 = new Produtos("ofdsafds", 43);
+// Produtos p1 = new Produtos("oi", 43);
+// Produtos x1 = new Produtos("ofdsafds", 43);
 
-Console.WriteLine(p1.Equals(x1));
+// Console.WriteLine(p1.Equals(x1));
+
+
+// -------- PESSOA TELEFONE VETOR CONTATO
+Contatos contatos = new Contatos();
+contatos.AdicionarPessoa("A", "1");
+contatos.AdicionarPessoa("B", "2");
+contatos.AdicionarPessoa("C", "3");
+contatos.AdicionarPessoa("D", "4");
+
+contatos.RemoverPessoa("E");
+
+contatos.ImprimirPessoa("T");
+
+// contatos.ImprimirContatos();
