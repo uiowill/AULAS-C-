@@ -74,14 +74,26 @@
 
 
 // -------- PESSOA TELEFONE VETOR CONTATO
-Contatos contatos = new Contatos();
-contatos.AdicionarPessoa("A", "1");
-contatos.AdicionarPessoa("B", "2");
-contatos.AdicionarPessoa("C", "3");
-contatos.AdicionarPessoa("D", "4");
+// Contatos contatos = new Contatos();
+// contatos.AdicionarPessoa("A", "1");
+// contatos.AdicionarPessoa("B", "2");
+// contatos.AdicionarPessoa("C", "3");
+// contatos.AdicionarPessoa("D", "4");
 
-contatos.RemoverPessoa("E");
+// contatos.RemoverPessoa("E");
 
-contatos.ImprimirPessoa("T");
+// contatos.ImprimirPessoa("T");
 
 // contatos.ImprimirContatos();
+
+// Rede b1 = new Rede();
+// b1.Adicionar("Brasil", 132313);
+// b1.Imprimir();
+// b1.Remover("Brasil");
+// b1.Imprimir();
+// b1.Atualizar();
+
+///
+
+Mensagem.Escrever("dsadsa");
+Console.WriteLine(Mensagem.contador);

@@ -1,0 +1,14 @@
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\bin\Debug\net8.0\Aula1.exe
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\bin\Debug\net8.0\Aula1.deps.json
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\bin\Debug\net8.0\Aula1.runtimeconfig.json
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\bin\Debug\net8.0\Aula1.dll
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\bin\Debug\net8.0\Aula1.pdb
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.AssemblyInfoInputs.cache
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.AssemblyInfo.cs
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.csproj.CoreCompileInputs.cache
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.dll
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\refint\Aula1.dll
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.pdb
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\Aula1.genruntimeconfig.cache
+c:\Users\AULA\Documents\VSCODE NOITE Willams\C#\Aula1\obj\Debug\net8.0\ref\Aula1.dll

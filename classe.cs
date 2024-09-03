@@ -207,3 +207,63 @@
 //     }
 
 // }
+
+// -------------- DICIONARIO -----------------
+// using System.Reflection.PortableExecutable;
+// using System.Runtime.CompilerServices;
+
+// Dictionary<string,string> ips = new Dictionary<string, string>();
+// ips["AmericaSul"] = "192.168.0.1"; // O DICIONARIO PEGA TUDO CLASSE, BOOLEAN ETC
+// ips.Add("Europa", "dsafdsa");
+// ips.Add("Tutorial", "Remover");
+// ips.Remove("Tutorial");
+
+
+// Console.WriteLine(ips.Count); // PARA VER QUANTOS ELEMENTOS TEM
+// if(!ips.ContainsKey("brasil")){ /// PARA VER SE O BAGULHO TA LA
+//     ips.TryAdd("Brasil", "312321");
+// }
+
+// Console.WriteLine(ips["Europa"]); // Para acessar especificamente o que você quiser
+
+
+// class Rede{
+// public Dictionary<string, int> ips = new Dictionary<string, int>();
+// public string cidade = "";
+// public int ddd = 0;
+
+//    public void Adicionar(string oi, int tchau)
+//     {
+//             if(!ips.ContainsKey(cidade)){
+//         Console.WriteLine("Cidade Já cadastrada");
+//         return;
+// }
+       
+//    ips.TryAdd(cidade, ddd);
+//    }
+//     public void Remover(string oi){
+//     ips.Remove(cidade);
+//     }
+//     public void Atualizar(){
+//     if(!ips.ContainsKey(cidade)){
+//         Console.WriteLine("Cidade Já cadastrada");
+//         return;
+// }
+//     ips["Brasil"] = 321321321;
+//     }
+//     public void Imprimir(){
+//         Console.WriteLine(ips.Count + ips["Brasil"]);
+//            Console.WriteLine(ips["Brasil"]);
+   
+// }
+// }
+
+
+class Mensagem{
+    public static int contador = 0;
+
+    public static void Escrever(string texto){
+        contador++;
+        Console.WriteLine(texto);
+    }
+}
