@@ -95,5 +95,18 @@
 
 ///
 
-Mensagem.Escrever("dsadsa");
-Console.WriteLine(Mensagem.contador);
+Empresa empresa = new Empresa();
+
+pessoaFisica pessoaFisica1 = new pessoaFisica(10, "0", "Nome", "dasdsa@hotmail.com");
+
+pessoaFisica pessoaFisica2 = new pessoaFisica(32, "4", "Nome", "fdsakojfkdsa@gmail.com");
+
+pessoaJuridica pessoaJuridica1 = new pessoaJuridica(32, "4", "Nome", "fdsakojfkdsa@gmail.com");
+
+pessoaJuridica pessoaJuridica2 = new pessoaJuridica(34, "4", "Nome", "fdsakojfkdsa@gmail.com");
+
+empresa.Adicionar(pessoaFisica1);
+empresa.Adicionar(pessoaJuridica1);
+
+empresa.listarPessoasFisica();
+empresa.listarPessoasJuridica();

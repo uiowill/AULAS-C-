@@ -238,7 +238,7 @@
 //         Console.WriteLine("Cidade Já cadastrada");
 //         return;
 // }
-       
+
 //    ips.TryAdd(cidade, ddd);
 //    }
 //     public void Remover(string oi){
@@ -254,16 +254,114 @@
 //     public void Imprimir(){
 //         Console.WriteLine(ips.Count + ips["Brasil"]);
 //            Console.WriteLine(ips["Brasil"]);
-   
+
 // }
 // }
 
 
-class Mensagem{
-    public static int contador = 0;
+// class Mensagem{
+//     public static int contador = 0;
 
-    public static void Escrever(string texto){
-        contador++;
-        Console.WriteLine(texto);
+//     public static void Escrever(string texto){
+//         contador++;
+//         Console.WriteLine(texto);
+//     }
+// }
+
+
+using System.Security.Cryptography;
+
+class Cliente{
+    protected string ID;
+    protected string Nome;
+    protected string Email;
+
+    public Cliente(string ID, string Nome, string Email){
+        this.ID = ID;
+        this.Nome = Nome;
+        this.Email = Email;
     }
+
+    public string GetID(){
+        return ID;
+    }
+
+    public virtual void ImprimirDetalhes(){
+      Console.WriteLine($"{ID} - {Nome} - {Email}");
+    }
+}
+
+class pessoaFisica : Cliente{
+    protected int cpf;
+
+    public pessoaFisica(int cpf, string ID, string Nome, string Email) : base(ID, Nome, Email){
+        this.cpf = cpf;
+    }
+    public override void ImprimirDetalhes()
+    {
+        Console.WriteLine($"{ID} - {Nome} - {Email} - {cpf}");
+    }
+}
+
+class pessoaJuridica : Cliente{
+    protected int cnpj = 0;
+    public pessoaJuridica(int cnpj, string ID, string Nome, string Email) : base(ID, Nome, Email){
+        this.cnpj = cnpj;
+    }
+    
+    public override void ImprimirDetalhes()
+    {
+        Console.WriteLine($"{ID} - {Nome} - {Email} - {cnpj}");
+    }
+}
+
+class Empresa{
+
+protected List<Cliente> listaCliente = new List<Cliente>();
+
+
+public void Adicionar(Cliente cliente){
+    foreach (Cliente c  in listaCliente)
+    {
+        if(c.GetID() == cliente.GetID()){
+            Console.WriteLine("Cliente já cadastradp");
+            return;
+        }
+    }
+    listaCliente.Add(cliente);
+}
+
+public void Remover(Cliente cliente){
+    if (listaCliente.Remove(cliente))
+    {
+        Console.WriteLine("Cliente removido");
+    }
+    else{
+        Console.WriteLine("Cliente não removido");        
+    }
+
+}
+
+public void listarPessoasFisica(){
+    foreach (Cliente cliente in listaCliente)
+    {
+        if (cliente is pessoaFisica)
+        {
+            cliente.ImprimirDetalhes();
+        }
+    }
+}
+
+
+public void listarPessoasJuridica(){
+
+    foreach (Cliente cliente in listaCliente)
+    {
+        if (cliente is pessoaJuridica)
+        {
+            cliente.ImprimirDetalhes();
+        }
+    }
+}
+
 }
