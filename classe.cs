@@ -269,99 +269,201 @@
 // }
 
 
+// -------------------- EMPRESA JURIDICA E PESSOAL -------------------
+
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 
-class Cliente{
-    protected string ID;
-    protected string Nome;
-    protected string Email;
+// class Cliente{
+//     protected string ID;
+//     protected string Nome;
+//     protected string Email;
 
-    public Cliente(string ID, string Nome, string Email){
-        this.ID = ID;
-        this.Nome = Nome;
-        this.Email = Email;
+//     public Cliente(string ID, string Nome, string Email){
+//         this.ID = ID;
+//         this.Nome = Nome;
+//         this.Email = Email;
+//     }
+
+//     public string GetID(){
+//         return ID;
+//     }
+
+//     public virtual void ImprimirDetalhes(){
+//       Console.WriteLine($"{ID} - {Nome} - {Email}");
+//     }
+// }
+
+// class pessoaFisica : Cliente{
+//     protected int cpf;
+
+//     public pessoaFisica(int cpf, string ID, string Nome, string Email) : base(ID, Nome, Email){
+//         this.cpf = cpf;
+//     }
+//     public override void ImprimirDetalhes()
+//     {
+//         Console.WriteLine($"{ID} - {Nome} - {Email} - {cpf}");
+//     }
+// }
+
+// class pessoaJuridica : Cliente{
+//     protected int cnpj = 0;
+//     public pessoaJuridica(int cnpj, string ID, string Nome, string Email) : base(ID, Nome, Email){
+//         this.cnpj = cnpj;
+//     }
+
+//     public override void ImprimirDetalhes()
+//     {
+//         Console.WriteLine($"{ID} - {Nome} - {Email} - {cnpj}");
+//     }
+// }
+
+// class Empresa{
+
+// protected List<Cliente> listaCliente = new List<Cliente>();
+
+
+// public void Adicionar(Cliente cliente){
+//     foreach (Cliente c  in listaCliente)
+//     {
+//         if(c.GetID() == cliente.GetID()){
+//             Console.WriteLine("Cliente já cadastradp");
+//             return;
+//         }
+//     }
+//     listaCliente.Add(cliente);
+// }
+
+// public void Remover(Cliente cliente){
+//     if (listaCliente.Remove(cliente))
+//     {
+//         Console.WriteLine("Cliente removido");
+//     }
+//     else{
+//         Console.WriteLine("Cliente não removido");        
+//     }
+
+// }
+
+// public void listarPessoasFisica(){
+//     foreach (Cliente cliente in listaCliente)
+//     {
+//         if (cliente is pessoaFisica)
+//         {
+//             cliente.ImprimirDetalhes();
+//         }
+//     }
+// }
+
+
+// public void listarPessoasJuridica(){
+
+//     foreach (Cliente cliente in listaCliente)
+//     {
+//         if (cliente is pessoaJuridica)
+//         {
+//             cliente.ImprimirDetalhes();
+//         }
+//         }
+//     }
+// }
+
+class Data{
+
+    protected int dia;
+    protected int mes;
+    protected int ano;
+
+    public Data(int dia, int mes, int ano){
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
     }
 
-    public string GetID(){
-        return ID;
+    public Data(){
+        dia = 01;
+        mes = 01;
+        ano = 01;
+    }
+    public int Setdia(int valor){
+    return dia = valor;        
     }
 
-    public virtual void ImprimirDetalhes(){
-      Console.WriteLine($"{ID} - {Nome} - {Email}");
+    public int Setmes(int valor){
+    return mes = valor;
     }
+    public int Setano(int valor){
+    return ano = valor;
+    }
+
+public int Getdia(){
+return dia;
 }
 
-class pessoaFisica : Cliente{
-    protected int cpf;
 
-    public pessoaFisica(int cpf, string ID, string Nome, string Email) : base(ID, Nome, Email){
-        this.cpf = cpf;
-    }
-    public override void ImprimirDetalhes()
-    {
-        Console.WriteLine($"{ID} - {Nome} - {Email} - {cpf}");
-    }
+public int Getmes(){
+return mes;
 }
 
-class pessoaJuridica : Cliente{
-    protected int cnpj = 0;
-    public pessoaJuridica(int cnpj, string ID, string Nome, string Email) : base(ID, Nome, Email){
-        this.cnpj = cnpj;
-    }
-    
-    public override void ImprimirDetalhes()
-    {
-        Console.WriteLine($"{ID} - {Nome} - {Email} - {cnpj}");
-    }
+
+public int Getano(){
+return ano;
 }
 
-class Empresa{
-
-protected List<Cliente> listaCliente = new List<Cliente>();
-
-
-public void Adicionar(Cliente cliente){
-    foreach (Cliente c  in listaCliente)
-    {
-        if(c.GetID() == cliente.GetID()){
-            Console.WriteLine("Cliente já cadastradp");
-            return;
-        }
+public void nomedoMes(){
+switch(mes){
+    case 1:
+    Console.WriteLine("Janeiro");
+    break;
+        case 2:
+    Console.WriteLine("Fevereiro");
+    break;
+        case 3:
+    Console.WriteLine("Março");
+    break;
+        case 4:
+    Console.WriteLine("Abril");
+    break;
+        case 5:
+    Console.WriteLine("Maio");
+    break;
+        case 6:
+    Console.WriteLine("Junho");
+    break;
+        case 7:
+    Console.WriteLine("Julho");
+    break;
+        case 8:
+    Console.WriteLine("Agosto");
+    break;
+         case 9:
+    Console.WriteLine("Setembro");
+    break;
+         case 10:
+    Console.WriteLine("Outubro");
+    break;
+         case 11:
+    Console.WriteLine("Novembro");
+    break;
+         case 12:
+    Console.WriteLine("Dezembro");
+    break;
+    default:
+    Console.WriteLine("SELECIONE UM MÊS DE 1 A 12");
+    break;
     }
-    listaCliente.Add(cliente);
 }
-
-public void Remover(Cliente cliente){
-    if (listaCliente.Remove(cliente))
-    {
-        Console.WriteLine("Cliente removido");
+public void AnoBissexto(){
+    if (DateTime.IsLeapYear(ano)){
+        Console.WriteLine($"O ano {ano} é um ano bissexto");
     }
     else{
-        Console.WriteLine("Cliente não removido");        
-    }
-
-}
-
-public void listarPessoasFisica(){
-    foreach (Cliente cliente in listaCliente)
-    {
-        if (cliente is pessoaFisica)
-        {
-            cliente.ImprimirDetalhes();
-        }
+        Console.WriteLine($"O ano {ano} não é um ano bissexto");
     }
 }
 
-
-public void listarPessoasJuridica(){
-
-    foreach (Cliente cliente in listaCliente)
-    {
-        if (cliente is pessoaJuridica)
-        {
-            cliente.ImprimirDetalhes();
-        }
+public Data Clonar(){
+   return new Data(dia, mes, ano);
     }
-}
-
+    
 }
